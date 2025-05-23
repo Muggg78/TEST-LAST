@@ -1,0 +1,1628 @@
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa; 
+    overflow-x: hidden; /* Prevent horizontal scrollbars from animations */
+}
+
+.top-purple-stripe {
+    height: 5px; 
+    background-color: #6A4C9C; 
+}
+
+.navbar-custom {
+    background-color: #ffffff !important; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
+}
+.navbar-custom .navbar-brand img {
+    height: 35px; 
+    margin-right: 8px;
+}
+.navbar-custom .navbar-brand .brand-text {
+    color: #6A4C9C; 
+    font-weight: 700; 
+    font-size: 1.3rem;
+}
+.navbar-custom .nav-link {
+    color: #6A4C9C !important; 
+    font-weight: 500; 
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 0.95rem;
+    transition: color 0.3s ease; /* Added for smoother hover */
+}
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: #503875 !important; 
+}
+.navbar-toggler {
+    border-color: rgba(106, 76, 156, 0.5); 
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(106, 76, 156, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.hero-section {
+    background-image: url('Place\ Your\ Image\ Here\ \(Double\ Click\ to\ Edit\)12.png');
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 5px - 74px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.circular-container {
+    position: relative;
+    width: 450px; 
+    height: 450px;
+    max-width: 90vw;
+    max-height: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-display-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(220, 223, 228, 0.75); 
+    box-shadow: 0 0 0 2px rgba(190, 195, 205, 0.6);
+}
+
+
+
+
+
+
+
+
+/* From your gh.css or new.css */
+.yoga-classes-section { /* Parent section, if any */
+    /* ... */
+    overflow-x: hidden; /* Good for preventing scroll from SVG on extreme resizes */
+}
+
+.curved-header-wrapper {
+    position: relative; /* Crucial for absolute positioning of the title container */
+    background-color: #fff; /* Fallback */
+}
+
+svg.curve-svg-bg {
+    width: 100%; /* KEY: Makes SVG take full width of its parent */
+    height: 200px; /* Base height, adjusted in media queries */
+    display: block; /* Removes extra space below SVG */
+}
+
+.section-title-container {
+
+}
+
+.section-title-container .meet-our {
+    font-size: 1.1rem; /* Base font size, adjusted in media queries */
+    color: #836FAA;
+    font-weight: 500;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 100%;
+}
+
+.section-title-container .main-title {
+    font-size: 2.2rem; /* Base font size, adjusted in media queries */
+    color: #6A4C9C;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 100%;
+    
+    
+}
+
+/* Responsive Adjustments from your existing CSS */
+@media (max-width: 767px) { /* Small devices (landscape phones, tablets in portrait) */
+    svg.curve-svg-bg {
+        height: 150px; /* Reduce curve height */
+    }
+    .section-title-container {
+        top: 40px; /* Adjust title position accordingly */
+    }
+    .section-title-container .meet-our {
+        font-size: 1rem;
+    }
+    .section-title-container .main-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 575px) { /* Extra small devices (portrait phones) */
+    svg.curve-svg-bg {
+        height: 120px; /* Further reduce curve height */
+    }
+    .section-title-container {
+        top: 25px; /* Adjust title position further */
+    }
+    .section-title-container .meet-our {
+        font-size: 0.9rem;
+    }
+    .section-title-container .main-title {
+        font-size: 1.6rem;
+    }
+}
+
+
+
+
+
+
+
+/* Your existing new.css or gh.css */
+.circular-container {
+    position: relative;
+ 
+    width: 450px; /* Default size for larger screens */
+    height: 450px;
+    max-width: 90vw; /* Ensures it shrinks to fit viewport width */
+    max-height: 90vw; /* Ensures it shrinks to fit viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ... styles for .outer-display-ring, .inner-content-circle ... */
+
+.hero-lotus-icon {
+    width: 30px; 
+    height: 30px;
+    /* The img-fluid class added in HTML will handle max-width: 100%; height: auto; */
+}
+
+/* Responsive Adjustments from your existing CSS */
+@media (max-width: 768px) { /* Corresponds to Bootstrap's 'md' breakpoint and below */
+    .hero-section {
+        min-height: calc(100vh - 5px - 68px); /* Adjust if navbar height changes at this breakpoint */
+    }
+    .circular-container {
+        width: 380px;
+        height: 380px;
+    }
+    .inner-content-circle {
+        width: calc(100% - 70px);
+        height: calc(100% - 70px);
+    }
+    .hero-tagline { font-size: 1.1em; }
+    .hero-title { font-size: 3em; }
+    .hero-description { font-size: 0.85em; }
+    .hero-lotus-icon { width: 28px; height: 28px; }
+    .dot { width: 16px; height: 16px; }
+    .dot-1 { top: 27%; left: 88%;}
+    .dot-2 { top: 73%; left: 12%;}
+}
+
+@media (max-width: 576px) { /* Corresponds to Bootstrap's 'sm' breakpoint and below */
+    .hero-section {
+        min-height: calc(100vh - 5px - 60px); /* Adjust if navbar height changes */
+        /* padding: 20px 10px; */ /* Now handled by py-5 px-3 in HTML */
+    }
+    .circular-container {
+        width: 300px; /* Or even consider using vw units here e.g. width: 85vw; height: 85vw; */
+        height: 300px;
+    }
+    .inner-content-circle {
+        width: calc(100% - 60px);
+        height: calc(100% - 60px);
+        padding: 15px;
+    }
+    .hero-tagline { font-size: 1em; }
+    .hero-title { font-size: 2.6em; }
+    .hero-description { font-size: 0.8em; max-width: 90%; margin-bottom: 15px;}
+    .hero-lotus-icon { width: 24px; height: 24px; }
+    .dot { width: 14px; height: 14px; }
+    .dot-1 { top: 25%; left: 90%;}
+    .dot-2 { top: 75%; left: 10%;}
+}
+
+
+
+
+.inner-content-circle {
+    width: calc(100% - 80px); 
+    height: calc(100% - 80px);
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid #6A4C9C; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1; 
+}
+
+.hero-tagline {
+    font-size: 1.25em; 
+    color: #6A4C9C;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.hero-title {
+    font-size: 3.5em; 
+    font-weight: 700;
+    color: #6A4C9C;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+.hero-description {
+    font-size: 0.9em; 
+    color: #6A4C9C;
+    margin-bottom: 20px;
+    max-width: 85%;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.hero-lotus-icon {
+    width: 30px; 
+    height: 30px;
+}
+
+.dot {
+    position: absolute;
+    width: 18px; 
+    height: 18px;
+    background-color: #6A4C9C; 
+    border-radius: 50%;
+    z-index: 2; 
+    transform: translate(-50%, -50%); 
+}
+
+.dot-1 { 
+    top: 28%;   
+    left: 87%;
+}
+
+.dot-2 { 
+    top: 72%;
+    left: 13%;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: calc(100vh - 5px - 68px); 
+    }
+    .circular-container {
+        width: 380px;
+        height: 380px;
+    }
+    .inner-content-circle {
+        width: calc(100% - 70px);
+        height: calc(100% - 70px);
+    }
+    .hero-tagline { font-size: 1.1em; }
+    .hero-title { font-size: 3em; }
+    .hero-description { font-size: 0.85em; }
+    .hero-lotus-icon { width: 28px; height: 28px; }
+    .dot { width: 16px; height: 16px; }
+    .dot-1 { top: 27%; left: 88%;}
+    .dot-2 { top: 73%; left: 12%;}
+}
+
+@media (max-width: 576px) {
+    .navbar-custom .navbar-brand .brand-text { font-size: 1.15rem; }
+    .navbar-custom .navbar-brand img { height: 30px; }
+    .navbar-custom .nav-link { font-size: 0.9rem; margin-left: 5px; margin-right: 5px;}
+    .hero-section {
+        min-height: calc(100vh - 5px - 60px);
+        padding: 20px 10px;
+    }
+    .circular-container {
+        width: 300px;
+        height: 300px;
+    }
+    .inner-content-circle {
+        width: calc(100% - 60px);
+        height: calc(100% - 60px);
+        padding: 15px;
+    }
+    .hero-tagline { font-size: 1em; }
+    .hero-title { font-size: 2.6em; }
+    .hero-description { font-size: 0.8em; max-width: 90%; margin-bottom: 15px;}
+    .hero-lotus-icon { width: 24px; height: 24px; }
+    .dot { width: 14px; height: 14px; }
+    .dot-1 { top: 25%; left: 90%;} 
+    .dot-2 { top: 75%; left: 10%;}
+}
+
+
+
+
+
+
+
+.yoga-classes-section {
+    padding-bottom: 60px;
+    overflow-x: hidden;
+}
+
+/* --- START: Styles for the Curved Header within yoga-classes-section --- */
+.curved-header-wrapper {
+    position: relative;
+    background-color: #fff; /* Fallback, or if SVG has transparent parts */
+}
+
+svg.curve-svg-bg {
+    width: 100%;
+    height: 200px; /* Height of the curved background area */
+    display: block; /* Removes extra space below SVG */
+}
+
+.section-title-container {
+    position: absolute;
+    top: 60px; /* Adjust to position title vertically on the curve */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1; /* Above SVG */
+    text-align: center;
+}
+
+.section-title-container .meet-our { /* Added this style from the image context */
+    font-size: 1.1rem;
+    color: #836FAA; /* Lighter purple from your previous examples or image */
+    font-weight: 500;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-title-container .main-title-yoga-classes { /* Renamed from .main-title for specificity */
+    font-size: 2.2rem;
+    color: #6A4C9C; /* Main purple from your previous examples or image */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0; /* Remove default h1 margin */
+}
+/* --- END: Styles for the Curved Header --- */
+
+
+.class-cards-container {
+    padding-top: 40px;
+    position: relative;
+    background-color: #fff; /* White background for cards area */
+     /* Ensure cards appear below the absolute positioned header
+       but above the main section background if it were different.
+       Since the curve is part of this section, z-index might not be strictly needed
+       if card container is not also absolutely positioned.
+       However, if the curved-header-wrapper was outside and above
+       this section, then this class-cards-container might need a higher z-index
+       if the header had a negative margin. Here, it's fine.
+    */
+}
+
+.yoga-class-card {
+    text-align: center;
+    padding: 20px 15px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* For hover */
+}
+.yoga-class-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(106, 76, 156, 0.1);
+}
+
+.card-image-container {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-dots svg {
+    width: 18px;
+    height: 18px;
+    fill: #6A4C9C;
+    margin-bottom: 10px;
+}
+
+.yoga-class-card .class-name {
+    font-size: 1.4rem;
+    color: #6A4C9C;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.yoga-class-card .class-description {
+    font-size: 0.85rem;
+    color: #A08FB1;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    min-height: 50px;
+}
+
+.yoga-class-card hr {
+    border-top: 1px solid #DCD1E8;
+    width: 80%;
+    margin: 0 auto 10px auto;
+}
+
+.yoga-class-card .class-schedule {
+    font-size: 0.95rem;
+    color: #6A4C9C;
+    font-weight: 500;
+}
+.yoga-class-card .class-schedule strong {
+    font-weight: 700;
+}
+
+.btn-show-more {
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 12px 35px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to right, #7d5aa6 0%, #6A4C9C 50%, #593e8c 100%);
+    background-size: 200% auto;
+    transition: background-position 0.5s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-show-more:hover {
+    background-position: right center;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-show-more:active {
+    background-color: #4E337A;
+    color: #FFFFFF;
+    transform: translateY(0px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 991px) { /* Medium devices (tablets) */
+    .card-image-container {
+        width: 150px;
+        height: 150px;
+    }
+    .yoga-class-card .class-name {
+        font-size: 1.3rem;
+    }
+    /* Responsive for header text if needed, could be more granular */
+     svg.curve-svg-bg {
+        height: 180px;
+    }
+    .section-title-container {
+        top: 50px; /* Adjust if SVG height changes */
+    }
+    .section-title-container .meet-our {
+        font-size: 1.05rem;
+    }
+    .section-title-container .main-title-yoga-classes {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767px) { /* Small devices (landscape phones) */
+    svg.curve-svg-bg {
+        height: 150px;
+    }
+    .section-title-container {
+        top: 40px;
+    }
+    .section-title-container .meet-our {
+        font-size: 1rem;
+    }
+    .section-title-container .main-title-yoga-classes {
+        font-size: 1.8rem;
+    }
+    .class-cards-container {
+        padding-top: 20px;
+    }
+    .card-image-container {
+        width: 130px;
+        height: 130px;
+    }
+    .yoga-class-card .class-name {
+        font-size: 1.2rem;
+    }
+    .yoga-class-card .class-description {
+        font-size: 0.8rem;
+        min-height: 40px;
+    }
+    .btn-show-more {
+        padding: 10px 30px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 575px) { /* Extra small devices (portrait phones) */
+    svg.curve-svg-bg {
+        height: 120px;
+    }
+    .section-title-container {
+        top: 25px;
+    }
+    .section-title-container .meet-our {
+        font-size: 0.9rem;
+    }
+    .section-title-container .main-title-yoga-classes {
+        font-size: 1.6rem;
+    }
+    .yoga-class-card {
+        margin-bottom: 30px;
+    }
+    .col-md-6:last-child .yoga-class-card {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+
+.promo-section {
+    position: relative;
+    background-image: url('Plac13.png'); 
+    background-size: cover; 
+    background-position: center center; 
+    padding-top: 0;
+    padding-bottom: 60px; 
+    min-height: 1150px; 
+    display: flex;
+    align-items: center; 
+    overflow: hidden;
+}
+
+.promo-curves-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8%; 
+    z-index: 1;
+}
+
+.promo-content-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.promo-actual-content {
+    padding-top: 22%; 
+}
+
+.discount-badge {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2.5px solid #6A4C9C;
+    box-shadow: 0 0 0 4px rgba(180, 170, 190, 0.35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.discount-badge .percentage {
+    font-size: 2rem;
+    color: #5C3E7D;
+    font-weight: 700;
+    line-height: 1;
+}
+ .discount-badge .percentage span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+    top: -0.12em;
+}
+
+.discount-badge .off-text {
+    font-size: 0.75rem;
+    color: #5C3E7D;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    margin-top: 3px;
+}
+
+.promo-title {
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    line-height: 1.15;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+}
+
+.promo-dates p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 991px) { 
+    .promo-section { min-height: 550px; }
+    .promo-curves-svg { height: 38%; }
+    .promo-actual-content { padding-top: 20%; } 
+    .discount-badge { width: 90px; height: 90px; margin-bottom: 18px;}
+    .discount-badge .percentage { font-size: 1.8rem; }
+    .discount-badge .percentage span { font-size: 1.1rem; }
+    .promo-title { font-size: 1.8rem; }
+    .promo-dates p { font-size: 0.85rem; }
+}
+
+@media (max-width: 767px) { 
+    .promo-section {
+        min-height: 500px; 
+        padding-bottom: 40px;
+    }
+    .promo-curves-svg { height: 35%; } 
+    .promo-actual-content {
+        padding-top: 25%; 
+        text-align: center;
+    }
+    .discount-badge {
+        width: 85px;
+        height: 85px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+    .discount-badge .percentage { font-size: 1.7rem; }
+    .discount-badge .percentage span { font-size: 1rem; }
+    .promo-title { font-size: 1.6rem; margin-bottom: 12px;}
+    .promo-dates p { font-size: 0.8rem; }
+}
+ @media (max-width: 575px) { 
+    .promo-section { min-height: 450px; }
+    .promo-curves-svg { height: 33%; }
+     .promo-actual-content { padding-top: 28%; } 
+    .discount-badge { width: 75px; height: 75px; }
+    .discount-badge .percentage { font-size: 1.5rem; }
+    .promo-title { font-size: 1.4rem; }
+ }
+
+:root {
+    --main-purple: #8A4E97; 
+    --light-gray-text: #AEAEAE; 
+    --dark-gray-text: #5F5F5F; 
+    --section-curve-bg: #EFF3F7; 
+    --white-bg: #FFFFFF;
+    --dot-color: var(--main-purple);
+    --heading-font: 'Poppins', sans-serif; /* Changed to Poppins */
+    --body-font: 'Poppins', sans-serif; /* Changed to Poppins */
+    --icon-circle-bg: #F8F5F9; /* Light purple for icon circles */
+    --description-gray-text: #777;
+    --description-gray-summer: #888;
+    --separator-gray-summer: #eee;
+    --hero-date-color: #777;
+    --dot-hero-color-simple: var(--main-purple);
+    --footer-purple: #6A4C9C;
+}
+
+.top-background-area {
+    height: 80px; 
+    background-color: var(--section-curve-bg);
+}
+
+.practice-dynamics-section {
+    background-color: var(--white-bg);
+    padding: 40px 0 60px 0;
+    margin-top: -60px; 
+    border-top-left-radius: 50% 60px;  
+    border-top-right-radius: 50% 60px; 
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden; 
+}
+
+.text-content-column {
+    padding-right: 30px; 
+}
+
+.practice-dynamics-section .main-title { /* Specificity increased */
+    font-family: var(--heading-font);
+    font-size: 2.8rem; 
+    font-weight: 700;
+    color: var(--main-purple);
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+.practice-dynamics-section .main-title .light-title-part { /* Specificity increased */
+    font-weight: 400; 
+    color: var(--light-gray-text);
+}
+
+.yoga-title {
+    font-family: var(--heading-font);
+    font-size: 1.8rem; 
+    font-weight: 700;
+    color: var(--main-purple);
+    margin-bottom: 25px;
+}
+
+.yoga-title .light-title-part {
+    font-weight: 400; 
+    color: var(--light-gray-text);
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--dark-gray-text);
+    margin-bottom: 30px;
+}
+
+.separator {
+    border-top: 2px solid var(--main-purple);
+    width: 100%; 
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.modules-info {
+    font-family: var(--heading-font);
+    font-size: 1.1rem;
+    color: var(--main-purple);
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.modules-info strong {
+    font-weight: 700;
+}
+
+.details-row {
+    display: flex;
+    gap: 50px; 
+}
+
+.detail-item .detail-label {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--main-purple);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.detail-item .detail-value {
+    font-size: 1rem;
+    color: var(--dark-gray-text);
+    line-height: 1.4;
+}
+
+.image-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-and-vertical-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 25px; 
+    width: 100%;
+}
+
+.circular-image-outer-wrapper {
+    max-width: 300px; 
+    width: 100%; 
+    flex-shrink: 0; 
+}
+
+.circular-image-container {
+    width: 100%;
+    padding-bottom: 100%; 
+    border-radius: 50%;
+    border: 4px solid var(--main-purple); 
+    position: relative; 
+    box-sizing: border-box;
+}
+
+.practice-dynamics-section .dot { /* More specific for these dots if needed */
+    width: 16px;
+    height: 16px;
+    background-color: var(--dot-color);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%); 
+}
+
+.dot-upper-left {
+    top: 20%;  
+    left: 12%; 
+}
+.dot-lower-right {
+    top: 80%;   
+    left: 88%;  
+}
+
+
+.inner-circle-content {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    border: 2.5px solid var(--main-purple); 
+    overflow: hidden; 
+    background-color: #f0f0f0; 
+}
+
+.yoga-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: var(--heading-font);
+    font-weight: 600; 
+    font-size: 1.1rem;
+    color: var(--light-gray-text);
+    letter-spacing: 0.25em; 
+    white-space: nowrap; 
+}
+
+.vertical-text span {
+    display: inline-block; 
+}
+
+@media (max-width: 991.98px) { 
+    .text-content-column {
+        padding-right: 0;
+        margin-bottom: 40px; 
+        text-align: center; 
+    }
+    .practice-dynamics-section .main-title {
+        font-size: 2.4rem;
+    }
+    .yoga-title {
+        font-size: 1.6rem;
+    }
+    .details-row {
+        justify-content: center; 
+        gap: 30px;
+    }
+    .separator {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .circular-image-outer-wrapper {
+        max-width: 250px; 
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .practice-dynamics-section .main-title {
+        font-size: 2rem;
+    }
+    .yoga-title {
+        font-size: 1.4rem;
+    }
+    .circular-image-outer-wrapper {
+        max-width: 220px; 
+    }
+    .vertical-text {
+        font-size: 1rem;
+        letter-spacing: 0.2em;
+    }
+    .image-and-vertical-text-wrapper {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .practice-dynamics-section {
+        border-top-left-radius: 40% 40px;
+        border-top-right-radius: 40% 40px;
+        margin-top: -40px;
+        padding-top: 30px;
+    }
+    .top-background-area {
+        height: 60px;
+    }
+    .modules-info, .detail-item .detail-label, .detail-item .detail-value, .description {
+        font-size: 0.9rem;
+    }
+    .circular-image-outer-wrapper {
+        max-width: 180px; 
+    }
+}
+
+/* Image on left styles */
+.practice-dynamics-section.image-on-left .text-content-column {
+    padding-left: 30px; 
+    padding-right: 0;
+}
+@media (max-width: 991.98px) { 
+    .practice-dynamics-section.image-on-left .text-content-column {
+        padding-left: 0 !important; 
+    }
+}
+
+.healthy-life-section {
+    background-color: var(--white-bg);
+}
+
+.title-line-container {
+    max-width: 250px; 
+    margin-bottom: 10px; 
+}
+
+.title-line-above {
+    border: none;
+    border-top: 2px solid var(--main-purple);
+    opacity: 1; 
+}
+
+.section-main-title {
+    font-family: var(--heading-font);
+    font-size: 1.8rem; 
+    font-weight: 600; 
+    margin-bottom: 40px; 
+    letter-spacing: 1px; 
+}
+
+.section-main-title .main-title-dark {
+    color: var(--main-purple);
+}
+
+.section-main-title .main-title-light {
+    color: var(--light-gray-text);
+    font-weight: 400; 
+}
+
+.icon-circle {
+    width: 90px;  
+    height: 90px; 
+    border-radius: 50%;
+    background-color: var(--icon-circle-bg);
+    border: 1.5px solid var(--main-purple); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+}
+
+.feature-icon {
+    max-width: 100%; 
+    max-height: 100%;
+    object-fit: contain; 
+}
+
+.feature-title {
+    font-family: var(--heading-font);
+    font-size: 1.1rem; 
+    font-weight: 700; 
+    color: var(--main-purple);
+    margin-bottom: 10px;
+    text-transform: uppercase; 
+    letter-spacing: 0.5px;
+}
+
+.feature-description {
+    font-size: 0.95rem; 
+    color: var(--description-gray-text); 
+    line-height: 1.6;
+    padding: 0 10px; 
+}
+
+@media (max-width: 767.98px) { 
+    .section-main-title {
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+    }
+    .icon-circle {
+        width: 80px;
+        height: 80px;
+    }
+    .feature-title {
+        font-size: 1rem;
+    }
+    .feature-description {
+        font-size: 0.9rem;
+    }
+    .title-line-container {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .section-main-title {
+        font-size: 1.4rem;
+    }
+    .healthy-life-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .title-line-container {
+        max-width: 150px;
+    }
+}
+
+.summer-classes-section {
+    background-color: var(--white-bg); 
+}
+
+.summer-section-title {
+    font-family: var(--heading-font);
+    font-size: 1.5rem; 
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.summer-section-title .title-light-look {
+    color: var(--light-gray-text);
+    font-weight: 400; 
+}
+
+.summer-section-title .title-dark-summer {
+    color: var(--main-purple);
+    font-weight: 700; 
+    font-size: 1.8rem; 
+}
+
+.class-card {
+    text-align: center; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* For hover */
+}
+.class-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(106, 76, 156, 0.1);
+}
+
+
+.class-image-container {
+    position: relative;
+    display: inline-block; 
+    margin-bottom: 20px;
+}
+
+.vertical-ellipsis-icon {
+    position: absolute;
+    left: -28px; 
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem; 
+    color: var(--main-purple);
+    font-family: 'Poppins', sans-serif; 
+    line-height: 1; 
+}
+
+.class-image {
+    width: 140px;  
+    height: 140px; 
+    border-radius: 50%;
+    object-fit: cover; 
+    display: block; 
+}
+
+.class-details {
+    max-width: 220px; 
+    text-align: left; 
+}
+
+.class-name {
+    font-family: var(--heading-font);
+    font-size: 1.25rem; 
+    font-weight: 700; 
+    color: var(--main-purple);
+    margin-bottom: 8px;
+}
+
+.class-description {
+    font-family: var(--body-font);
+    font-size: 0.9rem; 
+    color: var(--description-gray-summer);
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.class-separator {
+    border: none;
+    border-top: 1px solid var(--separator-gray-summer);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.class-schedule {
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+    margin-bottom: 0; 
+}
+
+.class-schedule .schedule-day {
+    font-weight: 700; 
+    color: var(--main-purple);
+}
+
+.class-schedule .schedule-time {
+    color: var(--description-gray-summer);
+}
+
+.btn-show-more-summer {
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 12px 35px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    font-family: var(--heading-font);
+    background-image: linear-gradient(to right, #7d5aa6 0%, #6A4C9C 50%, #593e8c 100%);
+    background-size: 200% auto;
+    transition: background-position 0.5s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-show-more-summer:hover {
+    background-position: right center;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-show-more-summer:active { /* Corrected from .btn-show-more-summer to :active */
+    background-color: #4E337A;
+    color: #FFFFFF;
+    transform: translateY(0px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 991.98px) { 
+    .class-details {
+        max-width: 200px; 
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .summer-section-title .title-light-look {
+        font-size: 1.3rem;
+    }
+    .summer-section-title .title-dark-summer {
+        font-size: 1.6rem;
+    }
+    .class-image {
+        width: 120px;
+        height: 120px;
+    }
+    .vertical-ellipsis-icon {
+        left: -25px;
+        font-size: 1.8rem;
+    }
+    .class-details {
+        max-width: 100%; 
+        padding: 0 15px; 
+    }
+}
+@media (max-width: 575.98px) { 
+    .summer-section-title .title-light-look {
+        font-size: 1.2rem;
+    }
+    .summer-section-title .title-dark-summer {
+        font-size: 1.4rem;
+    }
+}
+
+.yoga-hero-section-simple {
+    background-color: var(--white-bg);
+    overflow-x: hidden; 
+}
+
+.vertical-text-hero-simple {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: var(--heading-font);
+    font-weight: 400; 
+    font-size: 0.8rem; 
+    color: var(--light-gray-text);
+    letter-spacing: 0.35em; 
+    white-space: nowrap;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Adjusted for better visual fit on typical screen */
+}
+.vertical-text-hero-simple span {
+    display: block;
+}
+
+.hero-title-simple {
+    font-family: var(--heading-font);
+    font-size: 2.5rem; 
+    font-weight: 400; 
+    color: var(--main-purple);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.hero-title-simple .workshop-highlight-simple {
+    font-weight: 700; 
+}
+
+.hero-subtitle-simple {
+    font-family: var(--heading-font);
+    font-size: 1.1rem;
+    font-weight: 600; 
+    color: var(--main-purple);
+    line-height: 1.4;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.hero-dates-simple {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    color: var(--hero-date-color);
+    line-height: 1.5;
+}
+
+.image-column-hero-simple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-image-outer-wrapper-hero-simple {
+    max-width: 280px; 
+    width: 100%;
+    position: relative;
+}
+
+.circular-image-container-hero-simple {
+    width: 100%;
+    padding-bottom: 100%; 
+    border-radius: 50%;
+    border: 3.5px solid var(--main-purple); 
+    position: relative;
+    box-sizing: border-box;
+}
+
+.dot-hero-simple {
+    width: 15px; 
+    height: 15px;
+    background-color: var(--dot-hero-color-simple);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.dot-upper-right-hero-simple { top: 18%; left: 87%; }
+.dot-lower-left-hero-simple { top: 82%; left: 13%; }
+
+.inner-circle-content-hero-simple {
+    position: absolute;
+    top: 8px; 
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border-radius: 50%;
+    border: 2px solid var(--main-purple); 
+    overflow: hidden;
+}
+
+.yoga-image-hero-simple {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 991.98px) { 
+    .hero-title-simple { font-size: 2.2rem; }
+    .text-content-hero-simple {
+        text-align: center; 
+    }
+    .image-column-hero-simple {
+        margin-top: 20px; 
+    }
+     .circular-image-outer-wrapper-hero-simple {
+        max-width: 240px;
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .hero-title-simple { font-size: 1.8rem; }
+    .hero-subtitle-simple { font-size: 1rem; }
+    .text-content-hero-simple {
+         margin-bottom: 30px; 
+    }
+    .circular-image-outer-wrapper-hero-simple {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .hero-title-simple { font-size: 1.6rem; }
+    .hero-dates-simple { font-size: 0.9rem; }
+    .circular-image-outer-wrapper-hero-simple {
+        max-width: 200px;
+    }
+     .vertical-text-hero-simple { 
+        font-size: 0.7rem;
+        letter-spacing: 0.25em;
+        height: 250px; /* Adjust for smaller screens */
+    }
+}
+
+.swoosh-separator-background {
+    height: 150px; /* Adjust as needed for the visual curve */
+    background-color: var(--section-curve-bg); /* Light blue-gray */
+}
+
+.quote-section {
+    background-color: var(--white-bg);
+    border-top-left-radius: 50% 100px;  
+    border-top-right-radius: 50% 100px;
+    margin-top: -100px; 
+    position: relative; 
+    z-index: 2;
+    padding-top: 80px !important; 
+}
+
+.lotus-icon-container .lotus-icon {
+    width: 40px; 
+    height: auto;
+}
+.lotus-icon-fa { 
+    color: var(--main-purple);
+}
+
+.quote-text {
+    font-family: var(--heading-font);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--main-purple);
+    line-height: 1.7;
+    text-transform: uppercase;
+    margin-bottom: 10px; 
+}
+
+.quotation-marks-container {
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 4rem; 
+    color: var(--main-purple);
+    line-height: 0.5; 
+    font-weight: bold;
+    display: flex; 
+    justify-content: center; 
+    position: relative; 
+    width: 80%;
+    margin: 0 auto;
+}
+.quotation-marks-container .quotation-mark-open {
+    position: absolute;
+    left: -0.2em; /* Adjust to be slightly outside text area */
+    top: -0.5em; 
+    opacity: 0.3; 
+}
+.quotation-marks-container .quotation-mark-close {
+   position: absolute;
+   right: -0.2em; /* Adjust */
+   bottom: -0.8em; /* Adjust */
+}
+
+.about-us-section {
+    background-color: var(--white-bg);
+    position: relative;
+    z-index: 1; 
+}
+
+.about-title-main {
+    font-family: var(--heading-font);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--main-purple);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.about-description-main {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--dark-gray-text);
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.yoga-om-logo {
+    width: 40px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+.yoga-om-text {
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    color: var(--main-purple);
+    font-weight: 600;
+}
+.yoga-om-text .om-highlight {
+    font-weight: 400; 
+}
+
+.about-links-title {
+    font-family: var(--heading-font);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--main-purple);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.about-links-list li a {
+    font-family: var(--body-font);
+    font-size: 0.85rem;
+    color: var(--dark-gray-text);
+    text-decoration: none;
+    line-height: 1.8;
+    transition: color 0.3s ease;
+}
+.about-links-list li a:hover {
+    color: var(--main-purple);
+}
+
+.footer-purple-bar {
+    height: 70px; 
+    background-color: var(--footer-purple);
+    width: 100%;
+}
+
+@media (max-width: 991.98px) { 
+    .quote-section {
+        border-top-left-radius: 50% 80px;
+        border-top-right-radius: 50% 80px;
+        margin-top: -80px;
+        padding-top: 60px !important;
+    }
+    .swoosh-separator-background { height: 120px; }
+    .quote-text { font-size: 1rem; }
+}
+
+@media (max-width: 767.98px) { 
+    .quote-section {
+        border-top-left-radius: 50% 60px;
+        border-top-right-radius: 50% 60px;
+        margin-top: -60px;
+        padding-top: 50px !important;
+    }
+    .swoosh-separator-background { height: 100px; }
+    .quote-text { font-size: 0.9rem; }
+    .quotation-marks-container { font-size: 3rem; }
+
+    .about-us-section .col-md-4 {
+        text-align: center; 
+    }
+     .logo-area {
+        justify-content: center; 
+    }
+    .about-description-main { text-align: center; }
+    .about-title-main { text-align: center; }
+}
+
+@media (max-width: 575.98px) { 
+    .footer-purple-bar { height: 50px; }
+}
+
+
+/* --- Animation Styles --- */
+.animate-on-scroll {
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: 0.7s; /* Default duration */
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Playful ease */
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: none !important; /* Override initial transform */
+}
+
+/* Specific Animation Types */
+.fade-in { /* opacity handled by .animate-on-scroll */ }
+
+.slide-up { transform: translateY(50px); }
+.slide-down { transform: translateY(-50px); }
+.slide-left { transform: translateX(50px); }
+.slide-right { transform: translateX(-50px); }
+
+.scale-up { transform: scale(0.8); }
+.scale-down { transform: scale(1.2); }
+
+
+/* Delays */
+.delay-100.is-visible { transition-delay: 0.1s; }
+.delay-200.is-visible { transition-delay: 0.2s; }
+.delay-300.is-visible { transition-delay: 0.3s; }
+.delay-400.is-visible { transition-delay: 0.4s; }
+.delay-500.is-visible { transition-delay: 0.5s; }
+.delay-600.is-visible { transition-delay: 0.6s; }
+.delay-700.is-visible { transition-delay: 0.7s; }
+.delay-800.is-visible { transition-delay: 0.8s; }
+
+/* Hero Section On-Load Animations */
+.hero-section .circular-container {
+    animation: heroIntroScale 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s forwards;
+    opacity: 0; 
+}
+@keyframes heroIntroScale {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.hero-section .hero-tagline,
+.hero-section .hero-title,
+.hero-section .hero-description,
+.hero-section .hero-lotus-icon,
+.hero-section .dot { /* Added dots to initial animation */
+    animation: heroIntroFadeUp 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.hero-section .hero-tagline { animation-delay: 0.5s; }
+.hero-section .hero-title { animation-delay: 0.6s; } /* Slightly adjusted delays */
+.hero-section .hero-description { animation-delay: 0.7s; }
+.hero-section .hero-lotus-icon { animation-delay: 0.8s; }
+.hero-section .dot-1 { animation-delay: 0.9s; }
+.hero-section .dot-2 { animation-delay: 1.0s; }
+
+
+@keyframes heroIntroFadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
